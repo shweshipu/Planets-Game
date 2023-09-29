@@ -1,0 +1,324 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Spatial",
+"class": "A_Celestial",
+"language": "GDScript",
+"path": "res://Scripts/Celestial/A_Celestial.gd"
+}, {
+"base": "Node",
+"class": "A_Civ",
+"language": "GDScript",
+"path": "res://Scripts/Civs/A_Civ.gd"
+}, {
+"base": "Node",
+"class": "A_CommodityFactory",
+"language": "GDScript",
+"path": "res://Scripts/Factories/Commodity/A_CommodityFactory.gd"
+}, {
+"base": "MeshInstance",
+"class": "ArrayMeshEX",
+"language": "GDScript",
+"path": "res://archived/ArrayMeshEX.gd"
+}, {
+"base": "Node",
+"class": "Building_Admin",
+"language": "GDScript",
+"path": "res://Scripts/Buildings/General/Building_Administrative.gd"
+}, {
+"base": "Node",
+"class": "Census",
+"language": "GDScript",
+"path": "res://Scripts/Player/Census.gd"
+}, {
+"base": "A_Civ",
+"class": "Civ_Frog",
+"language": "GDScript",
+"path": "res://Scripts/Civs/Civ_Frogs.gd"
+}, {
+"base": "A_Civ",
+"class": "Civ_Reassemblers",
+"language": "GDScript",
+"path": "res://Scripts/Civs/Civ_Reassemblers.gd"
+}, {
+"base": "A_Civ",
+"class": "Civ_Stocks",
+"language": "GDScript",
+"path": "res://Scripts/Civs/Civ_Stocks.gd"
+}, {
+"base": "A_Civ",
+"class": "Civ_Traders",
+"language": "GDScript",
+"path": "res://Scripts/Civs/Civ_Traders.gd"
+}, {
+"base": "A_Civ",
+"class": "Civ_Welsh",
+"language": "GDScript",
+"path": "res://Scripts/Civs/Civ_Welsh.gd"
+}, {
+"base": "A_CommodityFactory",
+"class": "CommFactory_Traders",
+"language": "GDScript",
+"path": "res://Scripts/Factories/Commodity/CivSpecific/CommFactory_Traders.gd"
+}, {
+"base": "A_CommodityFactory",
+"class": "CommFactory_Welsh",
+"language": "GDScript",
+"path": "res://Scripts/Factories/Commodity/CivSpecific/CommFactory_Welsh.gd"
+}, {
+"base": "Node",
+"class": "Commodity",
+"language": "GDScript",
+"path": "res://Scripts/Commodities/Commodity.gd"
+}, {
+"base": "Node",
+"class": "CommodityDict",
+"language": "GDScript",
+"path": "res://Scripts/Data/CommodityDict.gd"
+}, {
+"base": "A_CommodityFactory",
+"class": "DefaultCommodityFactory",
+"language": "GDScript",
+"path": "res://Scripts/Factories/Commodity/DefaultCommodityFactory.gd"
+}, {
+"base": "Spatial",
+"class": "DrawHexasphere",
+"language": "GDScript",
+"path": "res://Scripts/Planet/Hex_Sphere_C#/DrawHexasphere.gd"
+}, {
+"base": "Node",
+"class": "Enums",
+"language": "GDScript",
+"path": "res://Scripts/Global/Enums.gd"
+}, {
+"base": "Commodity",
+"class": "ExportWrapper",
+"language": "GDScript",
+"path": "res://Scripts/Commodities/ExportWrapper.gd"
+}, {
+"base": "Node",
+"class": "Face",
+"language": "GDScript",
+"path": "res://Scripts/Planet/Hex_Sphere_C#/Face.gd"
+}, {
+"base": "Node",
+"class": "Goods",
+"language": "GDScript",
+"path": "res://Scripts/Commodities/Goods.gd"
+}, {
+"base": "Node",
+"class": "GuiFactory",
+"language": "GDScript",
+"path": "res://Scripts/GUI/GuiFactory.gd"
+}, {
+"base": "Spatial",
+"class": "HexManager",
+"language": "GDScript",
+"path": "res://Scripts/Planet/HexManager.gd"
+}, {
+"base": "Node",
+"class": "Hexasphere",
+"language": "GDScript",
+"path": "res://Scripts/Planet/Hex_Sphere_C#/Hexasphere.gd"
+}, {
+"base": "Node",
+"class": "MeshDetails",
+"language": "GDScript",
+"path": "res://Scripts/Planet/Hex_Sphere_C#/MeshDetails.gd"
+}, {
+"base": "Node",
+"class": "Player",
+"language": "GDScript",
+"path": "res://Scripts/Player/Player.gd"
+}, {
+"base": "Node",
+"class": "Point",
+"language": "GDScript",
+"path": "res://Scripts/Planet/Hex_Sphere_C#/Point.gd"
+}, {
+"base": "Spatial",
+"class": "PolyTester",
+"language": "GDScript",
+"path": "res://archived/polyTester.gd"
+}, {
+"base": "MeshInstance",
+"class": "Polygon",
+"language": "GDScript",
+"path": "res://Scripts/Planet/Hex_Sphere_C#/Polygon.gd"
+}, {
+"base": "Node",
+"class": "Rocket",
+"language": "GDScript",
+"path": "res://Scripts/Rockets/Rocket.gd"
+}, {
+"base": "A_Celestial",
+"class": "Star",
+"language": "GDScript",
+"path": "res://Scripts/Celestial/Star.gd"
+}, {
+"base": "MeshInstance",
+"class": "SurfaceEX",
+"language": "GDScript",
+"path": "res://archived/SurfaceEX.gd"
+}, {
+"base": "Node",
+"class": "Terrain",
+"language": "GDScript",
+"path": "res://Scripts/Terrain/Terrain.gd"
+}, {
+"base": "Terrain",
+"class": "TerrainDecorator",
+"language": "GDScript",
+"path": "res://Scripts/Terrain/TerrainDecorator.gd"
+}, {
+"base": "Node",
+"class": "Tile",
+"language": "GDScript",
+"path": "res://Scripts/Planet/Hex_Sphere_C#/Tile.gd"
+}, {
+"base": "Node",
+"class": "Unit",
+"language": "GDScript",
+"path": "res://Scripts/Units/A_Unit.gd"
+}, {
+"base": "Node",
+"class": "Upgrade",
+"language": "GDScript",
+"path": "res://Scripts/Culture/Upgrade.gd"
+}, {
+"base": "Button",
+"class": "UpgradeButton",
+"language": "GDScript",
+"path": "res://Scripts/GUI/UpgradeButton.gd"
+}, {
+"base": "Node",
+"class": "UpgradeManager",
+"language": "GDScript",
+"path": "res://Scripts/Player/UpgradeManager.gd"
+}, {
+"base": "Node",
+"class": "Vessel",
+"language": "GDScript",
+"path": "res://Scripts/Vessels/A_Vessel.gd"
+}, {
+"base": "Node",
+"class": "test",
+"language": "GDScript",
+"path": "res://archived/AngleTest.gd"
+} ]
+_global_script_class_icons={
+"A_Celestial": "",
+"A_Civ": "",
+"A_CommodityFactory": "",
+"ArrayMeshEX": "",
+"Building_Admin": "",
+"Census": "",
+"Civ_Frog": "",
+"Civ_Reassemblers": "",
+"Civ_Stocks": "",
+"Civ_Traders": "",
+"Civ_Welsh": "",
+"CommFactory_Traders": "",
+"CommFactory_Welsh": "",
+"Commodity": "",
+"CommodityDict": "",
+"DefaultCommodityFactory": "",
+"DrawHexasphere": "",
+"Enums": "",
+"ExportWrapper": "",
+"Face": "",
+"Goods": "",
+"GuiFactory": "",
+"HexManager": "",
+"Hexasphere": "",
+"MeshDetails": "",
+"Player": "",
+"Point": "",
+"PolyTester": "",
+"Polygon": "",
+"Rocket": "",
+"Star": "",
+"SurfaceEX": "",
+"Terrain": "",
+"TerrainDecorator": "",
+"Tile": "",
+"Unit": "",
+"Upgrade": "",
+"UpgradeButton": "",
+"UpgradeManager": "",
+"Vessel": "",
+"test": ""
+}
+
+[application]
+
+config/name="Civ Planets"
+run/main_scene="res://Scenes/Planet.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+GlobalSignal="*res://Scripts/Global/GlobalSignal.gd"
+Consts="*res://Scripts/Global/Consts.gd"
+
+[input]
+
+ui_page_up={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777235,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":4,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+ui_page_down={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777236,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":5,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+exit={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777217,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_forwards={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_backwards={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_left={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":65,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_right={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_up={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_down={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777237,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

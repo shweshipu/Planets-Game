@@ -1,0 +1,386 @@
+[gd_scene format=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Turns" type="Control" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -179.0
+margin_top = -238.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Turns"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Next" type="Button" parent="Turns/VBoxContainer"]
+margin_right = 179.0
+margin_bottom = 58.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Next Turn"
+expand_icon = true
+
+[node name="Planet" type="Button" parent="Turns/VBoxContainer"]
+margin_top = 62.0
+margin_right = 179.0
+margin_bottom = 238.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+text = "Bring up Planet List"
+expand_icon = true
+
+[node name="ResearchScreen" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Census" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="ResourceList" type="PopupPanel" parent="Census"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Census/ResourceList"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 36.0
+margin_bottom = 36.0
+
+[node name="List" type="VBoxContainer" parent="Census/ResourceList/ScrollContainer"]
+margin_right = 4.0
+margin_bottom = 14.0
+
+[node name="Resource" type="HBoxContainer" parent="Census/ResourceList/ScrollContainer/List"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Type" type="Label" parent="Census/ResourceList/ScrollContainer/List/Resource"]
+margin_right = 40.0
+margin_bottom = 14.0
+
+[node name="Count" type="Label" parent="Census/ResourceList/ScrollContainer/List/Resource"]
+margin_right = 40.0
+margin_bottom = 14.0
+
+[node name="ShipRocketPopup" type="PopupPanel" parent="Census"]
+anchor_bottom = 1.0
+margin_right = 341.0
+margin_bottom = -32.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Census/ShipRocketPopup"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Planet" type="ScrollContainer" parent="Census/ShipRocketPopup/HBoxContainer"]
+margin_right = 333.0
+margin_bottom = 329.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Census/ShipRocketPopup/HBoxContainer/Planet"]
+margin_right = 333.0
+margin_bottom = 329.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="examplebutton" type="Button" parent="Census/ShipRocketPopup/HBoxContainer/Planet/VBoxContainer"]
+margin_right = 333.0
+margin_bottom = 20.0
+text = "Rocket/Ship Name"
+
+[node name="UnitPopup" type="PopupPanel" parent="Census"]
+anchor_bottom = 1.0
+margin_right = 341.0
+margin_bottom = -32.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Census/UnitPopup"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Planet" type="ScrollContainer" parent="Census/UnitPopup/HBoxContainer"]
+margin_right = 164.0
+margin_bottom = 329.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Census/UnitPopup/HBoxContainer/Planet"]
+margin_right = 164.0
+margin_bottom = 329.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="examplebutton" type="Button" parent="Census/UnitPopup/HBoxContainer/Planet/VBoxContainer"]
+margin_right = 164.0
+margin_bottom = 20.0
+text = "Planet Name"
+
+[node name="BuildingsOnPlanet" type="ScrollContainer" parent="Census/UnitPopup/HBoxContainer"]
+margin_left = 168.0
+margin_right = 333.0
+margin_bottom = 329.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Census/UnitPopup/HBoxContainer/BuildingsOnPlanet"]
+margin_right = 165.0
+margin_bottom = 329.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="examplebutton" type="Button" parent="Census/UnitPopup/HBoxContainer/BuildingsOnPlanet/VBoxContainer"]
+margin_right = 165.0
+margin_bottom = 20.0
+text = "Unit Name"
+
+[node name="BuildingPopup" type="PopupPanel" parent="Census"]
+anchor_bottom = 1.0
+margin_right = 341.0
+margin_bottom = -32.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Census/BuildingPopup"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Planet" type="ScrollContainer" parent="Census/BuildingPopup/HBoxContainer"]
+margin_right = 168.0
+margin_bottom = 337.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Census/BuildingPopup/HBoxContainer/Planet"]
+margin_right = 168.0
+margin_bottom = 337.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="examplebutton" type="Button" parent="Census/BuildingPopup/HBoxContainer/Planet/VBoxContainer"]
+margin_right = 168.0
+margin_bottom = 20.0
+text = "Planet Name"
+
+[node name="BuildingsOnPlanet" type="ScrollContainer" parent="Census/BuildingPopup/HBoxContainer"]
+margin_left = 172.0
+margin_right = 341.0
+margin_bottom = 337.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Census/BuildingPopup/HBoxContainer/BuildingsOnPlanet"]
+margin_right = 169.0
+margin_bottom = 337.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="examplebutton" type="Button" parent="Census/BuildingPopup/HBoxContainer/BuildingsOnPlanet/VBoxContainer"]
+margin_right = 169.0
+margin_bottom = 20.0
+text = "Building Name"
+
+[node name="examplebutton2" type="Button" parent="Census/BuildingPopup/HBoxContainer/BuildingsOnPlanet/VBoxContainer"]
+margin_top = 24.0
+margin_right = 169.0
+margin_bottom = 44.0
+text = "Building Name"
+
+[node name="examplebutton3" type="Button" parent="Census/BuildingPopup/HBoxContainer/BuildingsOnPlanet/VBoxContainer"]
+margin_top = 48.0
+margin_right = 169.0
+margin_bottom = 68.0
+text = "Building Name"
+
+[node name="PlanetSelector" type="PopupPanel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PlanetSelector"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PlanetSelector/HBoxContainer"]
+margin_right = 510.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+
+[node name="Image" type="VideoPlayer" parent="PlanetSelector/HBoxContainer/VBoxContainer"]
+margin_right = 510.0
+margin_bottom = 238.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Description" type="Label" parent="PlanetSelector/HBoxContainer/VBoxContainer"]
+margin_top = 242.0
+margin_right = 510.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+size_flags_stretch_ratio = 1.5
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PlanetSelector/HBoxContainer"]
+margin_left = 514.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PlanetSelector/HBoxContainer/ScrollContainer"]
+margin_right = 510.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="examplebutton" type="Button" parent="PlanetSelector/HBoxContainer/ScrollContainer/VBoxContainer"]
+margin_right = 510.0
+margin_bottom = 20.0
+text = "Planet Name"
+
+[node name="BlackMarketScreen" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="TradeMenu" type="PopupPanel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TradeMenu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Side1" type="VBoxContainer" parent="TradeMenu/HBoxContainer"]
+margin_right = 510.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Player" type="Label" parent="TradeMenu/HBoxContainer/Side1"]
+margin_right = 510.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "Player1"
+align = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TradeMenu/HBoxContainer/Side1"]
+margin_top = 18.0
+margin_right = 510.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Tradables" type="VBoxContainer" parent="TradeMenu/HBoxContainer/Side1/ScrollContainer"]
+margin_right = 510.0
+margin_bottom = 582.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Cards" type="VBoxContainer" parent="TradeMenu/HBoxContainer/Side1/ScrollContainer/Tradables"]
+margin_right = 510.0
+
+[node name="Resources" type="VBoxContainer" parent="TradeMenu/HBoxContainer/Side1/ScrollContainer/Tradables"]
+margin_top = 4.0
+margin_right = 510.0
+margin_bottom = 4.0
+
+[node name="Units" type="VBoxContainer" parent="TradeMenu/HBoxContainer/Side1/ScrollContainer/Tradables"]
+margin_top = 8.0
+margin_right = 510.0
+margin_bottom = 8.0
+
+[node name="Side2" type="VBoxContainer" parent="TradeMenu/HBoxContainer"]
+margin_left = 514.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Player" type="Label" parent="TradeMenu/HBoxContainer/Side2"]
+margin_right = 510.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "Player2"
+align = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TradeMenu/HBoxContainer/Side2"]
+margin_top = 18.0
+margin_right = 510.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Tradables" type="VBoxContainer" parent="TradeMenu/HBoxContainer/Side2/ScrollContainer"]
+margin_right = 510.0
+margin_bottom = 582.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Cards" type="VBoxContainer" parent="TradeMenu/HBoxContainer/Side2/ScrollContainer/Tradables"]
+margin_right = 510.0
+
+[node name="Resources" type="VBoxContainer" parent="TradeMenu/HBoxContainer/Side2/ScrollContainer/Tradables"]
+margin_top = 4.0
+margin_right = 510.0
+margin_bottom = 4.0
+
+[node name="Units" type="VBoxContainer" parent="TradeMenu/HBoxContainer/Side2/ScrollContainer/Tradables"]
+margin_top = 8.0
+margin_right = 510.0
+margin_bottom = 8.0
+
+[node name="ShippingSelector" type="PopupPanel" parent="."]
+margin_left = 514.0
+margin_right = 522.0
+margin_bottom = 8.0
+
+[node name="EscMenu" type="PopupMenu" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Settings" type="PopupMenu" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="CivComparison" type="Control" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -40.0
+margin_top = -40.0
+
+[node name="ChooseStart" type="PopupPanel" parent="."]
+visible = true
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -76.5
+margin_right = 76.5
+margin_bottom = 39.0
+
+[node name="Timer" type="Label" parent="ChooseStart"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "UwU put seconds here
+(prolly 60)"
