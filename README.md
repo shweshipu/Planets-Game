@@ -3,7 +3,7 @@
 
 
 ## Postmortem
-The goal of this project is to make a game similar to games from the Sid Meier's Civilization series. <br>
+The goal of this project is to make a game similar to games from the [Sid Meier's Civilization](https://en.wikipedia.org/wiki/Civilization_(video_game)) series. <br>
 The main difference being that instead of playing on a Hex grid map, It would be played on multiple [Goldberg polyhedra](https://en.wikipedia.org/wiki/Goldberg_polyhedron) acting as planets. As players progress, they would make it to other planets.
 
 So far, only the goldberg polyhedra were implemented, mostly thanks to [this fine person's adaptation](https://github.com/Em3rgencyLT/Hexasphere) of [this other fine person's amazing code](https://github.com/arscan/hexasphere.js/). I just adapted it to GDScript. <br> 
