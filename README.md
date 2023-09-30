@@ -22,5 +22,5 @@ This project uses [Godot Engine](https://godotengine.org/) version 3.
 ## What it looks like right now
 ![presentation gif](https://github.com/shweshipu/Planets-Game/blob/master/readme-assets/presentation.gif?raw=true)
 
-## other credits
+## Other credits
 Many assets were used under public domain licenses. most of them are in /addons/
