@@ -16,7 +16,7 @@ What I learned from this project:
 - its very satisfying to make code where you can see the results in color
 
 ## If you wish to run it
-Most of the code is in the Scripts/Planet folder. Most of the other files in Scripts/ are just skeletons for future planned mechanics. <br>
+Most of the code is in the [Scripts/Planet](https://github.com/shweshipu/Planets-Game/tree/master/Scripts/Planet) and [Scripts/Celestial](https://github.com/shweshipu/Planets-Game/tree/master/Scripts/Celestial) folders. Most of the other files in Scripts/ are just skeletons for future planned mechanics. <br>
 This project uses [Godot Engine](https://godotengine.org/) version 3. 
 To run it, open it with the godot engine.
 
