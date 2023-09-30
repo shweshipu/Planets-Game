@@ -13,5 +13,6 @@ What I learned from this project:
 - version control is essential
 - its very satisfying to make code where you can see the results in color
 
-
 Most of the code is in the Scripts/Planet folder. Most of the other files in Scripts/ are just skeletons for future planned mechanics.
+
+![presentation gif](https://github.com/shweshipu/Planets-Game/blob/master/readme-assets/presentation.gif?raw=true)
