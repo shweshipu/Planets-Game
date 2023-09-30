@@ -19,8 +19,8 @@ What I learned from this project:
 Most of the code is in the Scripts/Planet folder. Most of the other files in Scripts/ are just skeletons for future planned mechanics. 
 This project uses [Godot Engine](https://godotengine.org/) version 3.
 
-## other credits
-Many assets were used under public domain licenses. most of them are in /addons/
-
 ## What it looks like right now
 ![presentation gif](https://github.com/shweshipu/Planets-Game/blob/master/readme-assets/presentation.gif?raw=true)
+
+## other credits
+Many assets were used under public domain licenses. most of them are in /addons/
