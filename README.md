@@ -17,7 +17,8 @@ What I learned from this project:
 
 ## If you wish to run it
 Most of the code is in the Scripts/Planet folder. Most of the other files in Scripts/ are just skeletons for future planned mechanics. <br>
-This project uses [Godot Engine](https://godotengine.org/) version 3.
+This project uses [Godot Engine](https://godotengine.org/) version 3. 
+To run it, open it with the godot engine.
 
 ## What it looks like right now
 ![presentation gif](https://github.com/shweshipu/Planets-Game/blob/master/readme-assets/presentation.gif?raw=true)
